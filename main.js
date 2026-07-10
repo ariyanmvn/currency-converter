@@ -202,10 +202,10 @@ const updateFlag = (select) => {
 amount.addEventListener("input", (e) => {
   console.log(e.target.value);
   if (amount.value < 0) {
-    amount.value = 1;
+    amount.value = 0;
   }
   if (finalAmount.value < 0) {
-    finalAmount.value = 1;
+    finalAmount.value = 0;
   }
   convert();
 });
@@ -213,10 +213,10 @@ window.addEventListener("load", () => {
   convert();
   const rate = document.getElementById("rate");
   if (amount.value < 0) {
-    amount.value = 1;
+    amount.value = 0;
   }
   if (finalAmount.value < 0) {
-    finalAmount.value = 1;
+    finalAmount.value = 0;
   }
 });
 
